@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Hometown</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="./changeButton.js" defer></script>
 </head>
 
 <body>
@@ -84,6 +83,25 @@
         <p>Contact us at: abalukwu@nnobiuna.org</p>
         <p>Follow us on social media: https://www.facebook.com/abalukwu.nnobi</p>
     </footer>
+
+
+
+    <script>
+
+
+        //grab the button using its class
+        const changeColorBtn = document.querySelector('.change-color-btn')
+
+        // grab the main
+        const main = document.querySelector('main')
+
+
+        // change color of main and background when button is clicked
+        changeColorBtn.addEventListener('click', () => {
+            main.style.backgroundColor = 'black'
+            main.style.color = 'white'
+        })
+    </script>
 </body>
 
 </html>
